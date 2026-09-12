@@ -15,15 +15,15 @@ export default function Home() {
       <div className="w-full max-w-sm rounded-3xl border border-gray-200 bg-white p-8 shadow-sm flex flex-col items-center">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="https://ui-avatars.com/api/?name=김클로&background=0EA5E9&color=fff&size=128"
+          src="https://ui-avatars.com/api/?name=KS&background=0EA5E9&color=fff&size=128"
           alt="프로필 사진"
           width={96}
           height={96}
           className="w-24 h-24 rounded-full object-cover"
         />
 
-        <h1 className="mt-4 text-xl font-bold text-gray-900">김클로</h1>
-        <p className="mt-1 text-sm text-gray-500">세계 최강 바이브코더</p>
+        <h1 className="mt-4 text-xl font-bold text-gray-900">김승현</h1>
+        <p className="mt-1 text-sm text-gray-500">항공기 항공전자 소프트웨어 엔지니어</p>
 
         <div className="mt-6 flex w-full flex-col gap-3">
           {links.map((link) => (
