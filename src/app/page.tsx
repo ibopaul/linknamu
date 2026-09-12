@@ -4,9 +4,9 @@ type LinkItem = {
 };
 
 const links: LinkItem[] = [
-  { label: "GitHub", href: "#" },
-  { label: "LinkedIn", href: "#" },
-  { label: "Blog", href: "#" },
+  { label: "GitHub", href: "https://github.com/ibopaul" },
+  { label: "Blog", href: "https://ibopaul.tistory.com" },
+  { label: "Email", href: "mailto:ibopaul_kim@naver.com" },
 ];
 
 export default function Home() {
