@@ -1,12 +1,9 @@
-type LinkItem = {
-  label: string;
-  href: string;
-};
+import LinkList, { type LinkItem } from "@/components/LinkList";
 
 const links: LinkItem[] = [
-  { label: "GitHub", href: "https://github.com/ibopaul" },
-  { label: "Blog", href: "https://ibopaul.tistory.com" },
-  { label: "Email", href: "mailto:ibopaul_kim@naver.com" },
+  { id: "github", label: "GitHub", href: "https://github.com/ibopaul" },
+  { id: "blog", label: "Blog", href: "https://ibopaul.tistory.com" },
+  { id: "email", label: "Email", href: "mailto:ibopaul_kim@naver.com" },
 ];
 
 export default function Home() {
@@ -41,17 +38,7 @@ export default function Home() {
           항공기 항공전자 소프트웨어 엔지니어
         </p>
 
-        <div className="mt-10 flex w-full flex-col gap-4">
-          {links.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              className="w-full rounded-2xl border border-white/60 bg-white/45 px-5 py-4 text-center text-sm font-medium text-slate-700 shadow-[0_6px_20px_-8px_rgba(56,120,180,0.25)] backdrop-blur-md transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/65 hover:shadow-[0_10px_24px_-8px_rgba(56,120,180,0.3)]"
-            >
-              {link.label}
-            </a>
-          ))}
-        </div>
+        <LinkList links={links} />
       </main>
     </div>
   );
